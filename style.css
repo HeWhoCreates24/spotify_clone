@@ -1092,6 +1092,10 @@ body {
     min-width: 43.5rem;
     max-width: 43.5rem;
   }
+
+  body {
+    display: none;
+  }
 }
 
 @media (max-height: 610px) {
