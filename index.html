@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="icon">
+        <img src="./assets/logo_bw.png" alt="" />
+      </div>
+      <div class="home-circle">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="search-browse">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="What do you want to play?" />
+        </div>
+        <div class="browse">
+          <i class="fa-regular fa-square-minus"></i>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="badges">
+          <button class="light">Explore Premium</button>
+          <button class="dark">
+            <i class="fa-regular fa-circle-down"></i>
+            Install App
+          </button>
+        </div>
+        <div class="right-icons">
+          <div class="noti">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+          <div class="user-circle">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="sidebar">
+        <div class="lib-head">
+          <div class="yourlib">
+            <img src="./assets/library_icon.png" alt="lib" />
+            <p>Your Library</p>
+          </div>
+          <div class="create-arrow">
+            <button class="create">
+              <i class="fa-regular fa-plus"></i>
+              <p>Create</p>
+            </button>
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="lib-badges">
+          <button class="lib-badge create">Playlists</button>
+          <button class="lib-badge create">Artists</button>
+          <button class="lib-badge create">Albums</button>
+        </div>
+        <div class="sidebar-content">
+          <div class="search-recent">
+            <div class="lib-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="recent">
+              Recent
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/liked-songs.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Liked Songs</div>
+              <div class="sb-card-info">Playlist &bullet; 53 Songs</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/playlist_cover.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">My Playlist #5</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/lofi_cover.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Lofi Playlist</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="
+                background-image: url(./assets/Screenshot\ 2025-03-21\ 171258.png);
+              "
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Absolute Cinema</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/mh_rafi.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Mohammed Rafi</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/ar_rehman.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">A. R. Rahman</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/Ed-Sheeran.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Ed Sheeran</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/divine.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Divine</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/liked-songs.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Liked Songs</div>
+              <div class="sb-card-info">Playlist &bullet; 53 Songs</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/playlist_cover.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">My Playlist #5</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/lofi_cover.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Lofi Playlist</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="
+                background-image: url(./assets/Screenshot\ 2025-03-21\ 171258.png);
+              "
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Absolute Cinema</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/mh_rafi.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Mohammed Rafi</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/ar_rehman.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">A. R. Rahman</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/Ed-Sheeran.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Ed Sheeran</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/divine.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Divine</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/liked-songs.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Liked Songs</div>
+              <div class="sb-card-info">Playlist &bullet; 53 Songs</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/playlist_cover.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">My Playlist #5</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/lofi_cover.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Lofi Playlist</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="
+                background-image: url(./assets/Screenshot\ 2025-03-21\ 171258.png);
+              "
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Absolute Cinema</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/mh_rafi.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Mohammed Rafi</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/ar_rehman.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">A. R. Rahman</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/Ed-Sheeran.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Ed Sheeran</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/divine.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Divine</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/liked-songs.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Liked Songs</div>
+              <div class="sb-card-info">Playlist &bullet; 53 Songs</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/playlist_cover.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">My Playlist #5</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/lofi_cover.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Lofi Playlist</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="
+                background-image: url(./assets/Screenshot\ 2025-03-21\ 171258.png);
+              "
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Absolute Cinema</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/mh_rafi.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Mohammed Rafi</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/ar_rehman.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">A. R. Rahman</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/Ed-Sheeran.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Ed Sheeran</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/divine.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Divine</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/liked-songs.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Liked Songs</div>
+              <div class="sb-card-info">Playlist &bullet; 53 Songs</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/playlist_cover.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">My Playlist #5</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="background-image: url(./assets/lofi_cover.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Lofi Playlist</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img"
+              style="
+                background-image: url(./assets/Screenshot\ 2025-03-21\ 171258.png);
+              "
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Absolute Cinema</div>
+              <div class="sb-card-info">Playlist &bullet; User</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/mh_rafi.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Mohammed Rafi</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/ar_rehman.png)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">A. R. Rahman</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/Ed-Sheeran.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Ed Sheeran</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+          <div class="sb-card">
+            <div
+              class="sb-card-img artist"
+              style="background-image: url(./assets/divine.jpg)"
+            >
+              <div class="play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="sb-card-right">
+              <div class="sb-card-title">Divine</div>
+              <div class="sb-card-info">Artist</div>
+            </div>
+          </div>
+
+          <div class="sb-footer"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="c-head">
+          <button class="badge c-badge" id="all-badge">All</button>
+          <button class="badge c-badge">Music</button>
+          <button class="badge c-badge">Podcasts</button>
+        </div>
+        <div class="recents">
+          <div class="recent-card">
+            <img src="./assets/liked-songs.png" alt="" />
+            <p>Liked Songs</p>
+            <div class="green-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="recent-card">
+            <img src="./assets/brklyn_bldpop.png" alt="" />
+            <p>In Heat X BrooklynBloodPop!</p>
+            <div class="green-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="s-head">
+            <div class="s-title">Made For You</div>
+            <div class="show-all">Show all</div>
+          </div>
+          <div class="s-cards">
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-1.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Nanku, Raj, Seedhe Maut and more</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-2.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Anuv Jain, Bayaan, Aditya Rikhari and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-3.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Sushin Shyam, Sid, Sriram and more</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-4.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Sachin-Jigar, Badshah, Amit Trivedi and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-5.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                A. R. Rahman, Abhay Jodhpurkar, Harris...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="s-head">
+            <div class="s-title">Your top mixes</div>
+            <div class="show-all">Show all</div>
+          </div>
+          <div class="s-cards">
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-1.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Armaan Malik, Mohammed Rafi, Adi...</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-2.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Ayushmann Khurrana, Aditya A and Sona...
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-3.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">NJ, Fejo and Dabzee</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-4.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Billie Eilish, Avicii, Lana Del Rey and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-5.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">A. R. Rahman and more</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="s-head">
+            <div class="s-title">Recommended for today</div>
+            <div class="show-all">Show all</div>
+          </div>
+          <div class="s-cards">
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-1.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Nanku, Raj, Seedhe Maut and more</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-2.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Anuv Jain, Bayaan, Aditya Rikhari and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-3.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Sushin Shyam, Sid, Sriram and more</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-4.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Sachin-Jigar, Badshah, Amit Trivedi and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/dm-5.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                A. R. Rahman, Abhay Jodhpurkar, Harris...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="s-head">
+            <div class="s-title">Based on your recent listening</div>
+            <div class="show-all">Show all</div>
+          </div>
+          <div class="s-cards">
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-1.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">Armaan Malik, Mohammed Rafi, Adi...</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-2.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Ayushmann Khurrana, Aditya A and Sona...
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-3.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">NJ, Fejo and Dabzee</div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-4.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">
+                Billie Eilish, Avicii, Lana Del Rey and more
+              </div>
+            </div>
+            <div class="s-card">
+              <div
+                class="card-cover"
+                style="background-image: url(./assets/tm-5.png)"
+              >
+                <div class="card-green-play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="card-artist">A. R. Rahman and more</div>
+            </div>
+          </div>
+        </div>
+        <div class="c-footer">
+          <div class="top-footer">
+            <div class="f-col">
+              <div class="f-col-title">Company</div>
+              <p>About</p>
+              <p>Jobs</p>
+              <p>For the Record</p>
+            </div>
+            <div class="f-col">
+              <div class="f-col-title">Communities</div>
+              <p>For Artists</p>
+              <p>Developers</p>
+              <p>Advertising</p>
+              <p>Investors</p>
+              <p>Vendors</p>
+            </div>
+            <div class="f-col">
+              <div class="f-col-title">Useful links</div>
+              <p>Support</p>
+              <p>Free Mobile App</p>
+            </div>
+            <div class="f-col">
+              <div class="f-col-title">Spotify plans</div>
+              <p>Premium Individual</p>
+              <p>Premium Duo</p>
+              <p>Premium Family</p>
+              <p>Premium Student</p>
+              <p>Spotify Free</p>
+            </div>
+            <div class="f-col" id="f-icons">
+              <div class="f-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="f-icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="f-icon"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+          </div>
+          <div class="bottom-footer">
+            <p>Legal</p>
+            <p>Safety &and; Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>About Ads</p>
+            <p>Accessibility</p>
+            <p id="copyright">&copy; 2025 Spotify AB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left-foot">
+        <div class="song">
+          <div class="song-img"></div>
+          <div class="song-info">
+            <div class="song-title">Rangi Saari</div>
+            <div class="song-artist">Kavita Seth, Kanishk Seth</div>
+          </div>
+        </div>
+        <div class="add">
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+      <div class="f-player">
+        <div class="player-icons">
+          <img src="./assets/player_icon1.png" alt="" />
+          <img src="./assets/player_icon2.png" alt="" />
+          <img src="./assets/player_icon3.png" alt="" id="play-btn" />
+          <img src="./assets/player_icon4.png" alt="" />
+          <img src="./assets/player_icon5.png" alt="" />
+        </div>
+        <div class="timeline">
+          <span>0:00</span>
+          <input type="range" name="" id="slider" value="0" />
+          <span>3:34</span>
+        </div>
+      </div>
+      <div class="f-options">
+        <i class="fa-regular fa-square-caret-right"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-bars-progress"></i>
+        <i class="fa-solid fa-computer"></i>
+        <label for="vol">
+          <i class="fa-solid fa-volume-high"></i>
+        </label>
+        <input type="range" name="" id="vol" value="0" />
+        <i class="fa-solid fa-border-top-left"></i>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </div>
+    <div class="mid-cover">
+      <div class="sb-cover"></div>
+      <div class="content-cover"></div>
+    </div>
+  </body>
+</html>
