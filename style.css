@@ -1601,6 +1601,7 @@ body {
 
 .footer2 {
   position: fixed;
+  z-index: 2;
   bottom: 0;
   width: 100%;
   min-width: max-content;
